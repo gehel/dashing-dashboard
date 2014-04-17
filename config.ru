@@ -17,5 +17,6 @@ map Sinatra::Application.assets_prefix do
 end
 
 set :routes_to_cycle_through, [:sample, :sampletv]
+set :protection, :except => :frame_options
 
 run Sinatra::Application
